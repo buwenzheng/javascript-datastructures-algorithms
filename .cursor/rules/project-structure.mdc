@@ -1,0 +1,59 @@
+---
+alwaysApply: true
+description: JavaScript数据结构和算法项目的结构指南
+---
+
+# 项目结构指南
+
+这是一个JavaScript数据结构和算法学习项目，包含JavaScript和TypeScript两个版本的实现。
+
+## 主要目录结构
+
+### 源代码目录
+- **src/js/**: JavaScript版本的源代码
+  - `data-structures/`: 各种数据结构实现（栈、队列、链表、树、图等）
+  - `algorithms/`: 各种算法实现（排序、搜索、动态规划、图算法等）
+  - `others/`: 其他实用工具和辅助函数
+  - [util.js](mdc:src/js/util.js): 通用工具函数和常量定义
+  - [index.js](mdc:src/js/index.js): 主要入口文件，导出所有模块
+
+- **src/ts/**: TypeScript版本的源代码（结构与js版本相同）
+  - 包含类型定义和更严格的类型检查
+  - `models/`: 数据结构的模型定义和类型声明
+  - [util.ts](mdc:src/ts/util.ts): TypeScript版本的工具函数
+  - [index.ts](mdc:src/ts/index.ts): TypeScript主入口文件
+
+### 测试目录
+- **test/**: 测试文件
+  - `js/`: JavaScript版本的测试文件
+  - `ts/`: TypeScript版本的测试文件
+  - 每个实现都有对应的 `.spec.js` 或 `.spec.ts` 测试文件
+  - 测试结构与源代码目录结构保持一致
+
+### 示例和演示
+- **examples/**: 章节示例和演示代码
+  - 按章节组织的学习示例（chapter01_02/, chapter03/, etc.）
+  - 包含HTML页面用于演示算法和数据结构的可视化效果
+  - 每个章节包含相应的JavaScript和HTML文件
+
+## 开发约定
+
+- 每个数据结构和算法都有JavaScript和TypeScript两个版本
+- 所有实现都有相应的单元测试
+- 使用ES6+语法特性
+- TypeScript版本包含完整的类型定义
+- 测试使用Mocha和Chai框架
+- 支持Webpack打包和构建
+
+## 配置文件
+
+### 项目配置
+- [package.json](mdc:package.json): 项目依赖和脚本配置
+- [tsconfig.json](mdc:tsconfig.json): TypeScript编译配置
+- [webpack.config.js](mdc:webpack.config.js): Webpack打包配置
+- [.eslintrc.json](mdc:.eslintrc.json): ESLint代码规范配置
+
+### 开发工具
+- [.gitignore](mdc:.gitignore): Git忽略文件配置
+- [.editorconfig](mdc:.editorconfig): 编辑器配置
+- [tslint.json](mdc:tslint.json): TypeScript代码检查配置
